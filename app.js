@@ -5,7 +5,7 @@ const playerTurnDisplay = document
 
 const winnerDisplay = document.getElementById("Winner").querySelector("h1");
 
-const plyrTrnLetter = playerTurnDisplay.closest("section").querySelector("i");
+var plyrTrnLetter = playerTurnDisplay.closest("section").querySelector("i");
 
 const winnerLetter = winnerDisplay.closest("section").querySelector("i");
 console.log(winnerLetter);
@@ -106,6 +106,7 @@ body.addEventListener("click", (event) => {
       allSlots[i].classList.remove("O");
     }
     playerTurnDisplay.innerHTML = `<i class="X">X</i> Turn`;
+    plyrTrnLetter = playerTurnDisplay.querySelector("i");
     plyrTrnLetter.textContent = "X";
     plyrTrnLetter.classList.remove("O");
     plyrTrnLetter.classList.add("X");
