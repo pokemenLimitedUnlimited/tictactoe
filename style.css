@@ -104,4 +104,7 @@ button:focus {
     margin-left: 0;
     margin-top: 5%;
   }
+  #grid button:hover {
+    background-color: transparent;
+  }
 }
