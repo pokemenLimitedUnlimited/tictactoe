@@ -1,0 +1,107 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+}
+
+#playerTurn {
+  display: flex;
+  justify-content: center;
+}
+
+#playerTurn h1 {
+  font-size: 3em;
+}
+
+#playerTurn h1 i {
+  font-style: normal;
+}
+
+#Winner {
+  display: flex;
+  justify-content: center;
+}
+
+#Winner h1 {
+  font-size: 5em;
+}
+
+#Winner h1 i {
+  font-style: normal;
+}
+
+#gridDiv {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#grid {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+button:focus {
+  outline: none;
+}
+
+#grid button:hover {
+  background-color: rgb(232, 232, 232);
+}
+
+#grid button {
+  font-size: 100px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.X {
+  color: red;
+}
+
+.O {
+  color: rgb(8, 108, 222);
+}
+
+#grid .row1 {
+  border-bottom: 2px solid black;
+}
+
+#grid .row2 {
+  border-bottom: 2px solid black;
+}
+
+#grid .col1 {
+  border-right: 2px solid black;
+}
+
+#grid .col2 {
+  border-right: 2px solid black;
+}
+
+#resetBtn {
+  font-size: 2em;
+  margin-left: 15%;
+  border: 2px solid rgb(73, 126, 206);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 15%;
+  aspect-ratio: 1/0.6;
+  background-color: rgb(190, 208, 237);
+}
+
+@media screen and (max-width: 768px) {
+  #grid {
+    width: 95%;
+  }
+  #resetBtn {
+    width: 35%;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+}
